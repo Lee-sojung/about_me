@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Work+Sans:wght@100&display=swap");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@900&family=Do+Hyeon&family=Dosis&family=Fredoka+One&family=Manrope:wght@300&family=PT+Sans+Narrow&family=Rajdhani&family=Roboto+Condensed&family=Roboto+Mono&family=Russo+One&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +34,7 @@ section {
       section .inner .profile .about {
         width: 540px; }
         section .inner .profile .about h1 {
-          font: bold 80px/1 "arial";
+          font: bold 80px/1 'Chivo';
           color: #333;
           margin-bottom: 20px;
           margin-left: 50px; }
@@ -44,20 +45,21 @@ section {
           background-color: #e0e1e0;
           padding: 10px 0 50px; }
           section .inner .profile .about .bg h2 {
-            font: bold 30px/1 "arial";
+            font: bold 30px/1 'Roboto Mono';
+            letter-spacing: 1px;
             color: #fff;
             margin-bottom: 20px;
             margin-left: 50px; }
           section .inner .profile .about .bg p {
-            font: normal 18px/1.2 "arial";
+            font: normal 18px/1.2 'Do Hyeon';
             color: #555;
             margin-bottom: 30px;
             margin-left: 50px; }
           section .inner .profile .about .bg .btnOpen {
             display: block;
-            width: 120px;
+            width: 140px;
             height: 40px;
-            font: normal 18px/40px "arial";
+            font: normal 18px/40px 'Roboto Mono';
             color: #fff;
             background-color: #333;
             text-align: center;
@@ -82,9 +84,9 @@ section {
           position: relative;
           width: 8%;
           transform-origin: right bottom;
-          transform: rotate(-90deg) translateX(-22px); }
+          transform: rotate(-90deg) translateX(-16px); }
           section .inner .sec2 .portfolio > .title > strong {
-            font: normal 16px/2 "arial";
+            font: normal 16px/2 'Roboto Mono';
             color: #fff;
             letter-spacing: 0.5px; }
         section .inner .sec2 .portfolio .link {
@@ -93,7 +95,7 @@ section {
           padding-left: 20px; }
           section .inner .sec2 .portfolio .link a {
             display: block;
-            font: normal 15px/1 "airal";
+            font: normal 15px/1 'Roboto Mono';
             color: #fff;
             margin-bottom: 10px; }
             section .inner .sec2 .portfolio .link a:last-child {
@@ -108,9 +110,9 @@ section {
           position: relative;
           width: 8%;
           transform-origin: right bottom;
-          transform: rotate(-90deg) translateX(-6px); }
+          transform: rotate(-90deg) translateX(3px); }
           section .inner .sec2 .contact > .title > strong {
-            font: normal 16px/2 "arial";
+            font: normal 16px/2 'Roboto Mono';
             color: #333;
             letter-spacing: 0.5px; }
         section .inner .sec2 .contact .sns {
@@ -119,7 +121,7 @@ section {
           padding-left: 20px; }
           section .inner .sec2 .contact .sns a {
             display: block;
-            font: normal 15px/1 "airal";
+            font: normal 15px/1 'Roboto Mono';
             color: #333;
             margin-bottom: 10px; }
             section .inner .sec2 .contact .sns a i {
@@ -142,9 +144,9 @@ section {
           position: relative;
           width: 10%;
           transform-origin: right bottom;
-          transform: rotate(-90deg) translateX(-31px); }
+          transform: rotate(-90deg) translateX(-25px); }
           section .inner .sec3 .sec3_box1 > .title > strong {
-            font: normal 16px/2 "arial";
+            font: normal 16px/2 'Roboto Mono';
             color: #333;
             letter-spacing: 0.5px; }
         section .inner .sec3 .sec3_box1 .link {
@@ -152,12 +154,12 @@ section {
           height: 280px;
           border-left: 1px solid #333;
           padding-left: 20px; }
-          section .inner .sec3 .sec3_box1 .link a {
+          section .inner .sec3 .sec3_box1 .link > a {
             display: block;
-            font: normal 15px/1 "airal";
+            font: normal 15px/1 'Roboto Mono';
             color: #333;
             margin-bottom: 10px; }
-            section .inner .sec3 .sec3_box1 .link a:last-child {
+            section .inner .sec3 .sec3_box1 .link > a:last-child {
               margin-bottom: 0px; }
       section .inner .sec3 .sec3_box2 {
         width: 35%;
@@ -168,9 +170,9 @@ section {
           position: relative;
           width: 10%;
           transform-origin: right bottom;
-          transform: rotate(-90deg) translateX(-26px); }
+          transform: rotate(-90deg) translateX(-20px); }
           section .inner .sec3 .sec3_box2 > .title > strong {
-            font: normal 16px/2 "arial";
+            font: normal 16px/2 'Roboto Mono';
             color: #333;
             letter-spacing: 0.5px; }
         section .inner .sec3 .sec3_box2 .sns {
@@ -180,7 +182,7 @@ section {
           padding-left: 20px; }
           section .inner .sec3 .sec3_box2 .sns a {
             display: block;
-            font: normal 15px/1 "airal";
+            font: normal 15px/1 'Roboto Mono';
             color: #333;
             margin-bottom: 10px; }
             section .inner .sec3 .sec3_box2 .sns a i {
@@ -196,9 +198,9 @@ section {
           position: relative;
           width: 10%;
           transform-origin: right bottom;
-          transform: rotate(-90deg) translateX(6px); }
+          transform: rotate(-90deg) translateX(0px); }
           section .inner .sec3 .sec3_box3 > .title > strong {
-            font: normal 16px/2 "arial";
+            font: normal 16px/2 'Roboto Mono';
             color: #333;
             letter-spacing: 0.5px; }
         section .inner .sec3 .sec3_box3 .sns {
@@ -208,7 +210,7 @@ section {
           padding-left: 20px; }
           section .inner .sec3 .sec3_box3 .sns a {
             display: block;
-            font: normal 15px/1 "airal";
+            font: normal 15px/1 'Roboto Mono';
             color: #333;
             margin-bottom: 10px; }
             section .inner .sec3 .sec3_box3 .sns a i {
@@ -277,7 +279,7 @@ aside {
     aside .inner .content {
       width: 100%; }
       aside .inner .content h2 {
-        font: normal 5vw/1 "work sans";
+        font: normal 5vw/1 'Roboto Mono';
         color: #fff;
         margin-bottom: 30px; }
       aside .inner .content img {
@@ -285,7 +287,7 @@ aside {
         height: 90%;
         object-fit: cover; }
       aside .inner .content p {
-        font: 15px/1.5 "arial";
+        font: 15px/1.5 '맑은 고딕';
         color: #bbb; }
     aside .inner .btnClose {
       position: absolute;
