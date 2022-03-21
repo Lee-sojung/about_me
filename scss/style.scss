@@ -328,7 +328,7 @@ aside{
     position: absolute; top: 50%; left: 50%;
     transform: translate(-50%,-50%);
     z-index: 3;
-    overflow-y: scroll; display: none;
+    display: none;
     .top{
         width: 0%; height: 1px; background: #000;
         position: absolute; top: 0; left: 0;
@@ -347,7 +347,8 @@ aside{
     }
 
     .inner{
-        width: 100%; height: auto; padding: 50px;
+        width: 100%; height: 100%; padding: 50px;
+        overflow: auto;
         box-sizing: border-box;
         position: absolute; top: 0; left: 0;
         background: #000;
@@ -386,12 +387,6 @@ aside{
             width: 100%;
         }
     }
-    aside{
-        width: 90%; height: 90%;
-        .inner{
-            width: 100%; height: auto; 
-        }
-        }
     }
 
  @media screen and (max-width:1116px){
@@ -443,13 +438,6 @@ aside{
                 }
             }
         }
-        aside{
-            width: 90%; height: 90%;
-            overflow-y: scroll;
-            .inner{
-                width: 100%; height: auto; 
-            }
-            }
     }
         
  @media screen and (max-width:966px){
@@ -505,78 +493,354 @@ aside{
                     }
                 }
             }
-            aside{
-                width: 90vw; height: 90vh;
-                overflow-y: scroll;
 
-                .inner{
-                    width: 100%; height: auto;
-                }
-                }
     }
-
-    @media screen and (max-width:600px){
+@media screen and (max-width:915px){
         section{ 
             .inner{
                 .profile{
-                    width: 100%;
-                    display: block;
-                    >img{
-                        
-                        width: 100%;
-                        height: 450px;
-                        object-fit: cover;
-                    }
                     .about{
-                        width: 100%;
-                    }
-        
-                }
-        
-                .sec2{
-                    .portfolio{
-                        >.title{
-                            transform: rotate(-90deg) translateX(-30px);
-                        }
-                    }
-                    .contact{
-                        >.title{
-                            transform: rotate(-90deg) translateX(-10px);
-
-                            >strong{
-                                word-break: keep-all;
+                        width: 55%;
+                        h1{
+                            &:nth-child(1){
+                                margin-bottom: 0px;
                             }
-                        }
-                    }
-        
-                }
-                
-                .sec3{
-                    .sec3_box1{
-                        >.title{
-                            transform: rotate(-90deg) translateX(-40px);
-                        }
-                    }
-                    .sec3_box2{
-                        >.title{
-                            transform: rotate(-90deg) translateX(-35px);
-                        }
-                    }
-                    .sec3_box3{
-                        >.title{
-                            transform: rotate(-90deg) translateX(-15px);
                         }
                     }
         
                 }
             }
         }
-        aside{
-            width: 90vw; height: 90vh;
-            overflow-y: scroll;
 
-            .inner{
+}    
+
+@media screen and (max-width:879px){
+    section{ 
+        .inner{
+            .profile{
+                >img{
+                    width: 45%;
+                    height: 450px;
+                    object-fit: cover;
+                }
+                .about{
+                    width: 55%;
+                }
+    
+            }
+    
+            .sec2{
                 width: 100%; height: auto;
+                display: block;
+                .portfolio{
+                    width: 100%;
+                    >.title{
+                        transform: rotate(-90deg) translateX(-10px);
+                    }
+                }
+                .contact{
+                    width: 100%;
+                    >.title{
+                        transform: rotate(-90deg) translateX(0px);
+
+                        >strong{
+                            word-break: keep-all;
+                        }
+                    }
+                }
+    
             }
+            
+            .sec3{
+                height: auto;
+                .sec3_box1{
+                    display: block;
+                    >.title{
+                        text-align: center;
+                        width: 100%;
+                        background: #eee;
+                        transform: rotate(0deg) translateX(0px);
+                        margin-bottom: 20px;
+                    }
+                    >.experience{
+                        width: 100%; height: 280px;
+                        border-left: none;
+                        padding-left: 0px;
+                    }
+                }
+                .sec3_box2{
+                    width: 35%; 
+                    display: block;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    >.title{
+                        width: 100%;
+                        text-align: center;
+                        background-color: #333;
+                        transform: rotate(0deg) translateX(0px);
+                        margin-bottom: 20px;
+                        >strong{
+                            color: #eee;
+                        }
+                    }
+
+                .education{
+                    width: 100%; height: 280px;
+                }
+
+                }
+                .sec3_box3{
+                    width: 25%;
+                    display: block;
+
+                    >.title{
+                        width: 100%;
+                        text-align: center;
+                        margin-bottom: 20px;
+                        transform: rotate(0deg) translateX(0px);
+                    }
+                }
+    
             }
+        }
+    }
+
+}
+
+@media screen and (max-width:765px){
+    section{ 
+        background: none;
+        .inner{
+            padding: 0px 0;
+            .profile{
+                >img{
+                    width: 45%;
+                    height: 450px;
+                    object-fit: cover;
+                }
+                .about{
+                    width: 55%;
+                }
+    
+            }
+    
+            .sec2{
+                width: 100%; height: auto;
+                display: block;
+                .portfolio{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    >.title{
+                        transform-origin: right bottom;
+                        transform: rotate(-90deg) translateX(20px);
+                    }
+                }
+                .contact{
+                    width: 100%;
+                    >.title{
+                        transform: rotate(-90deg) translateX(0px);
+
+                        >strong{
+                            word-break: keep-all;
+                        }
+                    }
+                }
+    
+            }
+            
+            .sec3{
+                height: auto;
+                .sec3_box1{
+                    display: block;
+                    >.title{
+                        text-align: center;
+                        width: 100%;
+                        background: #eee;
+                        transform: rotate(0deg) translateX(0px);
+                        margin-bottom: 20px;
+                    }
+                    >.experience{
+                        width: 100%; height: auto;
+                        border-left: none;
+                        padding-left: 0px;
+                    }
+                }
+                .sec3_box2{
+                    width: 35%; 
+                    display: block;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    >.title{
+                        width: 100%;
+                        text-align: center;
+                        background-color: #333;
+                        transform: rotate(0deg) translateX(0px);
+                        margin-bottom: 20px;
+                        >strong{
+                            color: #eee;
+                        }
+                    }
+
+                .education{
+                    width: 100%; height: 300px;
+
+                    .edu2{
+                        height: 160px;
+                    }
+                }
+
+                }
+                .sec3_box3{
+                    width: 25%;
+                    display: block;
+
+                    >.title{
+                        width: 100%;
+                        text-align: center;
+                        margin-bottom: 20px;
+                        transform: rotate(0deg) translateX(0px);
+                    }
+                    .skills{
+                        width: 100%; height: 300px;
+                    }
+                }
+    
+            }
+        }
+    }
+
+}
+@media screen and (max-width:600px){
+    section{ 
+        padding: 0px 0px;
+        
+        .inner{
+            .profile{
+                width: 100%;
+                display: block;
+                margin-bottom: 0px;
+                >img{
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+                .about{
+                    width: 100%;
+                    h1{
+                        margin-left: 20px;
+                    }
+                    .bg{
+                        width: 100%;
+                        padding: 10px 0 30px;
+    
+                        h2{
+                            margin-left: 20px;
+                        }
+                        p{
+                            margin-left: 20px;
+                        }
+                        .btnOpen{
+                        margin-left: 20px;
+                        }
+                    }
+                }
+    
+            }
+
+            .sec2{
+                margin-bottom: 0px;
+                .portfolio{
+                    >.title{
+                        transform: rotate(-90deg) translateX(0px);
+                    }
+                }
+                .contact{
+                    >.title{
+                        transform: rotate(-90deg) translateX(-20px);
+
+                    }
+                }
+    
+            }
+            
+            .sec3{
+                width: 100%;
+                display: block;
+                .sec3_box1{
+                    width: 100%;                
+                    display: block;
+                    margin-bottom: 30px;
+                    
+                    >.experience{
+                        border-left: 1px solid #333;
+                        width: 100%; height: auto;
+                        padding-left: 20px;
+                    }
+                }
+                .sec3_box2{
+                    width: 100%; 
+                    margin-bottom: 0px;
+                    background: rgba(197, 197, 197, 0.26);
+                    padding-bottom: 30px;
+
+                .education{
+                    width: 100%; height: auto;
+
+
+                    .edu2{
+                        padding: 0px;
+                        height: auto; 
+                        background-color:none;
+                        
+                        >h2{
+                            padding-left: 20px;
+                            font: normal 15px/1 'Roboto Mono';
+                            color: #333;
+                            margin-bottom: 10px;
+                        }
+                        >p{
+                            padding-left: 20px;
+                            font: normal 13px/1.2 'Roboto Mono';
+                            color: #777;
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+
+                }
+                .sec3_box3{
+                    width: 100%;
+                    display: block;
+
+                    >.title{
+                        border-top: 1px solid #aaa;
+                        border-bottom: 1px solid #aaa;
+                        width: 100%;
+                        text-align: center;
+                        margin-bottom: 20px;
+                        transform: rotate(0deg) translateX(0px);
+                    }
+
+                .skills{
+                    width: 100%; height: auto;
+                }
+                }
+    
+            }
+        }
+    }
+
+}
+@media screen and (max-width:450px){
+    section{ 
+        width: 100%;
+        padding: 0px;
+        .inner{
+            width: 100%;
+        }
+    }
+
 }
