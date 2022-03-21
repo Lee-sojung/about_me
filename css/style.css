@@ -11,6 +11,9 @@ ul, ol, li {
 a {
   text-decoration: none; }
 
+body {
+  background: #111; }
+
 section {
   width: 100%;
   padding: 50px 0 100px;
@@ -242,7 +245,7 @@ section {
             section .inner .sec3 .sec3_box3 .skills > span:last-child {
               margin-bottom: 0px; }
   section.off {
-    opacity: 0.2; }
+    opacity: 0.1; }
 
 aside {
   width: 90%;
@@ -257,28 +260,28 @@ aside {
   aside .top {
     width: 0%;
     height: 1px;
-    background: #000;
+    background: #fff;
     position: absolute;
     top: 0;
     left: 0; }
   aside .right {
     width: 1px;
     height: 0%;
-    background: #000;
+    background: #fff;
     position: absolute;
     top: 0;
     right: 0; }
   aside .bottom {
     width: 0%;
     height: 1px;
-    background: #000;
+    background: #fff;
     position: absolute;
     bottom: 0;
     right: 0; }
   aside .left {
     width: 1px;
     height: 0%;
-    background: #000;
+    background: #fff;
     position: absolute;
     left: 0;
     bottom: 0; }

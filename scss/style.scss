@@ -4,6 +4,7 @@
 *{ margin: 0; padding: 0; box-sizing: border-box;}
 ul,ol,li{list-style: none;}
 a{text-decoration: none;}
+body{background: #111;}
 
 section{
     width: 100%;
@@ -318,7 +319,7 @@ section{
     }
 
     &.off{
-        opacity: 0.2;
+        opacity: 0.1;
     }
     
 }
@@ -330,19 +331,19 @@ aside{
     z-index: 3;
     display: none;
     .top{
-        width: 0%; height: 1px; background: #000;
+        width: 0%; height: 1px; background: #fff;
         position: absolute; top: 0; left: 0;
     }
     .right{
-        width: 1px; height: 0%; background: #000;
+        width: 1px; height: 0%; background: #fff;
         position: absolute; top: 0; right: 0;
     }
     .bottom{
-        width: 0%; height: 1px; background: #000;
+        width: 0%; height: 1px; background: #fff;
         position: absolute; bottom: 0; right: 0;
     }
     .left{
-        width: 1px; height: 0%; background: #000;
+        width: 1px; height: 0%; background: #fff;
         position: absolute; left: 0; bottom: 0;
     }
 
