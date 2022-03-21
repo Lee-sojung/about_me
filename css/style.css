@@ -149,18 +149,19 @@ section {
             font: normal 16px/2 'Roboto Mono';
             color: #333;
             letter-spacing: 0.5px; }
-        section .inner .sec3 .sec3_box1 .link {
+        section .inner .sec3 .sec3_box1 > .experience {
           width: 90%;
           height: 280px;
           border-left: 1px solid #333;
           padding-left: 20px; }
-          section .inner .sec3 .sec3_box1 .link > a {
-            display: block;
+          section .inner .sec3 .sec3_box1 > .experience > h2 {
             font: normal 15px/1 'Roboto Mono';
             color: #333;
             margin-bottom: 10px; }
-            section .inner .sec3 .sec3_box1 .link > a:last-child {
-              margin-bottom: 0px; }
+          section .inner .sec3 .sec3_box1 > .experience > p {
+            font: normal 13px/1 'Roboto Mono';
+            color: #777;
+            margin-bottom: 30px; }
       section .inner .sec3 .sec3_box2 {
         width: 35%;
         display: flex;
@@ -175,20 +176,40 @@ section {
             font: normal 16px/2 'Roboto Mono';
             color: #333;
             letter-spacing: 0.5px; }
-        section .inner .sec3 .sec3_box2 .sns {
+        section .inner .sec3 .sec3_box2 .education {
+          position: relative;
           width: 90%;
           height: 280px;
-          border-left: 1px solid #333;
-          padding-left: 20px; }
-          section .inner .sec3 .sec3_box2 .sns a {
-            display: block;
-            font: normal 15px/1 'Roboto Mono';
-            color: #333;
-            margin-bottom: 10px; }
-            section .inner .sec3 .sec3_box2 .sns a i {
-              margin-right: 10px; }
-            section .inner .sec3 .sec3_box2 .sns a:last-child {
-              margin-bottom: 0px; }
+          border-left: 1px solid #333; }
+          section .inner .sec3 .sec3_box2 .education .edu {
+            padding-left: 20px;
+            width: 100%; }
+            section .inner .sec3 .sec3_box2 .education .edu > h2 {
+              font: normal 15px/1 'Roboto Mono';
+              color: #333;
+              margin-bottom: 10px;
+              z-index: 5; }
+            section .inner .sec3 .sec3_box2 .education .edu > p {
+              font: normal 13px/1 'Roboto Mono';
+              color: #777;
+              margin-bottom: 30px; }
+          section .inner .sec3 .sec3_box2 .education .edu2 {
+            padding: 10px 0;
+            height: 144px;
+            width: 100%;
+            background-color: rgba(238, 238, 238, 0.459); }
+            section .inner .sec3 .sec3_box2 .education .edu2 > h2 {
+              padding-left: 20px;
+              font: normal 15px/1 'Roboto Mono';
+              color: #333;
+              margin-bottom: 10px;
+              z-index: 5; }
+            section .inner .sec3 .sec3_box2 .education .edu2 > p {
+              padding-left: 20px;
+              font: normal 13px/1 'Roboto Mono';
+              color: #777;
+              margin-bottom: 30px;
+              z-index: 5; }
       section .inner .sec3 .sec3_box3 {
         width: 25%;
         display: flex;
@@ -203,19 +224,17 @@ section {
             font: normal 16px/2 'Roboto Mono';
             color: #333;
             letter-spacing: 0.5px; }
-        section .inner .sec3 .sec3_box3 .sns {
+        section .inner .sec3 .sec3_box3 .skills {
           width: 90%;
           height: 280px;
           border-left: 1px solid #333;
           padding-left: 20px; }
-          section .inner .sec3 .sec3_box3 .sns a {
+          section .inner .sec3 .sec3_box3 .skills > span {
             display: block;
             font: normal 15px/1 'Roboto Mono';
-            color: #333;
-            margin-bottom: 10px; }
-            section .inner .sec3 .sec3_box3 .sns a i {
-              margin-right: 10px; }
-            section .inner .sec3 .sec3_box3 .sns a:last-child {
+            color: #555;
+            margin-bottom: 15px; }
+            section .inner .sec3 .sec3_box3 .skills > span:last-child {
               margin-bottom: 0px; }
   section.off {
     opacity: 0.2; }
