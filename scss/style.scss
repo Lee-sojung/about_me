@@ -61,17 +61,23 @@ section{
                         color: #777;
                         margin-bottom: 30px;
                         margin-left: 50px;
+                        word-break: keep-all;
                     }
                     .btnOpen{
                     display: block;
                     width: 140px;
                     height: 40px;
                     font: normal 18px/40px 'Roboto Mono';
-                    color: #fff;
-                    background-color: #333;
+                    color: #333;
+                    border: 1px solid #333;
                     text-align: center;
                     margin-left: 50px;
+                    transition: 0.5s;
                     
+                    &:hover{
+                        color: #fff;
+                        background: #333;
+                    }
                     
                     }
                 }
@@ -151,7 +157,7 @@ section{
                     padding-left: 20px;
                     a{
                         display: block;
-                        font: normal 15px/1 'Roboto Mono';
+                        font: normal 15px/1.2 'Roboto Mono';
                         color: #333;
                         margin-bottom: 10px;
 
@@ -203,7 +209,7 @@ section{
                         margin-bottom: 10px;
                     }
                     >p{
-                        font: normal 13px/1 'Roboto Mono';
+                        font: normal 13px/1.2 'Roboto Mono';
                         color: #777;
                         margin-bottom: 30px;
                     }
@@ -246,7 +252,7 @@ section{
                             z-index: 5;
                         }
                         >p{
-                            font: normal 13px/1 'Roboto Mono';
+                            font: normal 13px/1.2 'Roboto Mono';
                             color: #777;
                             margin-bottom: 30px;
                         }
@@ -265,7 +271,7 @@ section{
                         }
                         >p{
                             padding-left: 20px;
-                            font: normal 13px/1 'Roboto Mono';
+                            font: normal 13px/1.2 'Roboto Mono';
                             color: #777;
                             margin-bottom: 30px;
                             z-index: 5;
@@ -317,12 +323,12 @@ section{
     
 }
 aside{
-    width: 1180px; height: 89%;
+    width: 90%; height: 90%;
     background-color: rgba(17, 17, 17, 0.137);
     position: absolute; top: 50%; left: 50%;
     transform: translate(-50%,-50%);
     z-index: 3;
-    overflow: hidden; display: none;
+    overflow-y: scroll; display: none;
     .top{
         width: 0%; height: 1px; background: #000;
         position: absolute; top: 0; left: 0;
@@ -341,13 +347,10 @@ aside{
     }
 
     .inner{
-        width: 100%; height: 100%; padding: 50px;
+        width: 100%; height: auto; padding: 50px;
         box-sizing: border-box;
         position: absolute; top: 0; left: 0;
         background: #000;
-        display: flex; justify-content:space-between;
-        align-content: center; flex-wrap: wrap;
-
         opacity: 0; transition: 0.5s;
 
         &.on{opacity: 1;}
@@ -373,4 +376,207 @@ aside{
         }
     }
 
+}
+//tablet -------------------------------------------------
+@media screen and (max-width:1195px){
+    section{
+        width: 100%;
+        padding: 50px 50px;
+        .inner{
+            width: 100%;
+        }
+    }
+    aside{
+        width: 90%; height: 90%;
+        .inner{
+            width: 100%; height: auto; 
+        }
+        }
+    }
+
+ @media screen and (max-width:1116px){
+        section{ 
+            .inner{
+                .profile{
+                    >img{
+                        width: 45%;
+                        height: 450px;
+                        object-fit: cover;
+                    }
+                    .about{
+                        width: 55%;
+                    }
+        
+                }
+        
+                .sec2{
+                    .portfolio{
+                        >.title{
+                            transform: rotate(-90deg) translateX(-25px);
+                        }
+                    }
+                    .contact{
+                        >.title{
+                            transform: rotate(-90deg) translateX(-3px);
+                        }
+                    }
+        
+                }
+                
+                .sec3{
+                    .sec3_box1{
+                        >.title{
+                            transform: rotate(-90deg) translateX(-35px);
+                        }
+                    }
+                    .sec3_box2{
+                        >.title{
+                            transform: rotate(-90deg) translateX(-30px);
+                        }
+                    }
+                    .sec3_box3{
+                        >.title{
+                            transform: rotate(-90deg) translateX(-10px);
+                        }
+                    }
+        
+                }
+            }
+        }
+        aside{
+            width: 90%; height: 90%;
+            overflow-y: scroll;
+            .inner{
+                width: 100%; height: auto; 
+            }
+            }
+    }
+        
+ @media screen and (max-width:966px){
+            section{ 
+                .inner{
+                    .profile{
+                        >img{
+                            width: 45%;
+                            height: 450px;
+                            object-fit: cover;
+                        }
+                        .about{
+                            width: 55%;
+                        }
+            
+                    }
+            
+                    .sec2{
+                        .portfolio{
+                            >.title{
+                                transform: rotate(-90deg) translateX(-30px);
+                            }
+                        }
+                        .contact{
+                            >.title{
+                                transform: rotate(-90deg) translateX(-10px);
+
+                                >strong{
+                                    word-break: keep-all;
+                                }
+                            }
+                        }
+            
+                    }
+                    
+                    .sec3{
+                        .sec3_box1{
+                            >.title{
+                                transform: rotate(-90deg) translateX(-40px);
+                            }
+                        }
+                        .sec3_box2{
+                            >.title{
+                                transform: rotate(-90deg) translateX(-35px);
+                            }
+                        }
+                        .sec3_box3{
+                            >.title{
+                                transform: rotate(-90deg) translateX(-15px);
+                            }
+                        }
+            
+                    }
+                }
+            }
+            aside{
+                width: 90vw; height: 90vh;
+                overflow-y: scroll;
+
+                .inner{
+                    width: 100%; height: auto;
+                }
+                }
+    }
+
+    @media screen and (max-width:600px){
+        section{ 
+            .inner{
+                .profile{
+                    width: 100%;
+                    display: block;
+                    >img{
+                        
+                        width: 100%;
+                        height: 450px;
+                        object-fit: cover;
+                    }
+                    .about{
+                        width: 100%;
+                    }
+        
+                }
+        
+                .sec2{
+                    .portfolio{
+                        >.title{
+                            transform: rotate(-90deg) translateX(-30px);
+                        }
+                    }
+                    .contact{
+                        >.title{
+                            transform: rotate(-90deg) translateX(-10px);
+
+                            >strong{
+                                word-break: keep-all;
+                            }
+                        }
+                    }
+        
+                }
+                
+                .sec3{
+                    .sec3_box1{
+                        >.title{
+                            transform: rotate(-90deg) translateX(-40px);
+                        }
+                    }
+                    .sec3_box2{
+                        >.title{
+                            transform: rotate(-90deg) translateX(-35px);
+                        }
+                    }
+                    .sec3_box3{
+                        >.title{
+                            transform: rotate(-90deg) translateX(-15px);
+                        }
+                    }
+        
+                }
+            }
+        }
+        aside{
+            width: 90vw; height: 90vh;
+            overflow-y: scroll;
+
+            .inner{
+                width: 100%; height: auto;
+            }
+            }
 }
