@@ -218,6 +218,11 @@ section{
                         margin-bottom: 10px;
 
                         &:last-child{ margin-bottom: 0px;}
+
+                        &:hover{
+                            color: #f6e58d;
+                            i{color: #f6e58d;}
+                        }
                     }
                 }
 
