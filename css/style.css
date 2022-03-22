@@ -64,9 +64,9 @@ section {
             width: 140px;
             outline: none;
             height: 40px;
-            font: normal 18px/40px 'Roboto Mono';
+            font: normal 16px/40px 'Roboto Mono';
             color: #333;
-            background: rgba(255, 255, 255, 0.575);
+            background: rgba(255, 255, 255, 0.527);
             text-align: center;
             margin-left: 50px;
             transition: all .5s;
